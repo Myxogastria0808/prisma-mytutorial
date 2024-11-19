@@ -18,6 +18,13 @@ yarn prisma db pull
 #以下のコマンドは、使用するデータベースが空でも実行する
 ```
 
+## Schema を作成または変更した場合
+
+```shell
+#Prisma Clientを生成する
+yarn prisma generate
+```
+
 ## `package.json`
 
 ```json
@@ -174,11 +181,4 @@ model User {
   id Int @id @default(autoincrement())
   name String
 }
-```
-
-### Schema を作成または変更した場合
-
-```shell
-#Prisma Clientを生成する
-yarn prisma generate
 ```
